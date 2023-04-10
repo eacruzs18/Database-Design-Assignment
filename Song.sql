@@ -4,6 +4,12 @@ CREATE DATABASE IF NOT EXISTS SONG;
 
 USE SONG;
 
+CREATE TABLE Artist (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  first_name VARCHAR(255) NOT NULL,
+  last_name VARCHAR(255) NOT NULL,
+  date_of_birth DATE NOT NULL
+);
 
 CREATE TABLE Song (
   id INT PRIMARY KEY AUTO_INCREMENT,
@@ -13,13 +19,6 @@ CREATE TABLE Song (
   cloud_link VARCHAR(255) NOT NULL,
   artist_id INT NOT NULL,
   FOREIGN KEY (artist_id) REFERENCES Artist(id)
-);
-
-CREATE TABLE Artist (
-  id INT PRIMARY KEY AUTO_INCREMENT,
-  first_name VARCHAR(255) NOT NULL,
-  last_name VARCHAR(255) NOT NULL,
-  date_of_birth DATE NOT NULL
 );
 
 CREATE TABLE Genre (
