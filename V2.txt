@@ -8,4 +8,4 @@ Create a new table PlaylistItem with an id, playlist_id, song_id, and rank colum
  
 Modify the foreign key constraint in the PlaylistItem table to reference the new id column in the modified Playlist table.
  
-Update any existing user accounts to have an account type of "standard" (assuming this is the default account type for v2).
+Update any existing user accounts to have an account type of "standard".
