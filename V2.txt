@@ -1,0 +1,11 @@
+Create a new table AccountType with an id and name column. The name column will contain the name of the account type (e.g., "free", "standard", "premium").
+ 
+Add a new column account_type_id to the User table. This column will be a foreign key that references the id column in the AccountType table.
+ 
+Modify the Playlist table to include a user_id and name column, as well as a new id column as the primary key.
+ 
+Create a new table PlaylistItem with an id, playlist_id, song_id, and rank column, as well as a new id column as the primary key.
+ 
+Modify the foreign key constraint in the PlaylistItem table to reference the new id column in the modified Playlist table.
+ 
+Update any existing user accounts to have an account type of "standard" (assuming this is the default account type for v2).
